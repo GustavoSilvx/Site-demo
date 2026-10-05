@@ -328,7 +328,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: 80% 50%;
+      object-position: 72% 50%;
       z-index: -2;
       transform: scale(1.05)
     }
@@ -1011,6 +1011,15 @@
 
       .hero__in {
         padding-bottom: 6rem
+      }
+
+      /* desktop: a foto começa abaixo do header para a cabeça não ficar atrás do menu; o topo some em degradê */
+      .hero__img {
+        top: 76px;
+        height: calc(100% - 76px);
+        object-position: 72% 0%;
+        -webkit-mask-image: linear-gradient(transparent, #000 130px);
+        mask-image: linear-gradient(transparent, #000 130px)
       }
 
       .hero::after {
